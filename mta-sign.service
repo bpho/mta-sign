@@ -1,0 +1,15 @@
+[Unit]
+Description=MTA LED Sign
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/bpho/mta-sign
+ExecStart=/usr/bin/python3 /home/bpho/mta-sign/display.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
