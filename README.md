@@ -103,6 +103,7 @@ All feeds at: https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct/
   - Disable Tailscale VPN on Pi to reduce CPU/WiFi load
   - Disable FreshRSS to free up resources
   - Test with WiFi disabled to confirm WiFi interference theory
+- Displayed arrival times deviate from Google Maps / MTA apps -- see [NOTES.md](NOTES.md) for the five root causes and proposed fixes
 
 ## Potential improvements
 
