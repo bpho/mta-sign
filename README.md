@@ -60,8 +60,30 @@ Then compile core and graphics extensions with distutils (see setup notes in rep
 sudo pip3 install --break-system-packages gtfs-realtime-bindings requests protobuf pytz
 
 ### Running
+
+Install and start as a systemd service (auto-starts on boot, restarts on crash):
+```
+cd ~/mta-sign && git pull
+sudo cp mta-sign.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable mta-sign
+sudo systemctl start mta-sign
+```
+
+Common service commands:
+```
+sudo systemctl status mta-sign   # check status and recent logs
+sudo systemctl stop mta-sign     # stop
+sudo systemctl restart mta-sign  # restart
+sudo systemctl disable mta-sign  # prevent auto-start on boot
+journalctl -fu mta-sign          # stream live logs
+```
+
+To run manually without systemd:
+```
 cd ~/mta-sign
 sudo python3 display.py
+```
 
 ## Data source
 
