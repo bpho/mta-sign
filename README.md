@@ -27,6 +27,9 @@ Each row shows a colored train bullet, destination text, and arrival time pinned
 - Stale data warning after 3 minutes without a successful fetch
 - No service message if a train is not running
 
+## Sample Experience (Updated 6/28)
+<img width="1330" height="2365" alt="F709512C-A89B-4540-8FBA-DE4BDEEC2295_1_102_o" src="https://github.com/user-attachments/assets/3029c7fc-5455-4fb1-8429-12baa679d48e" />
+
 ## Setup
 
 ### Hardware
